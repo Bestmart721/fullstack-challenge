@@ -1,18 +1,18 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-</script>
-
 <template>
-  <header>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-      </nav>
-    </div>
-  </header>
-  <RouterView />
+  <v-app>
+    <v-container>
+      <h1 class="text-center mb-6">User Weather Dashboard</h1>
+      <ApiTest />
+    </v-container>
+  </v-app>
 </template>
 
-<style scoped>
+<script>
+import ApiTest from './components/ApiTest.vue';
 
-</style>
+export default {
+  components: {
+    ApiTest,
+  },
+};
+</script>
